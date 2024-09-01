@@ -60,7 +60,7 @@
             <img
               src="./images/image-equilibrium.jpg"
               alt="ntf cube"
-              class="rounded-md md:w-72 img"
+              class="rounded-md md:w-72 img group-hover:cursor-pointer"
             />
           </div>
           <div class="mt-4 font-sans">
@@ -132,9 +132,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         let imgEl = document.querySelector(".img");
-        // imgEl.classList.add("opacity-0");
         let t1 = gsap.timeline();
-        // t1.to(imgEl, { scale: 0.7 }).to(imgEl, { scale: 1 });
         t1.from(imgEl, {
           opacity: 0,
           y: -40,
